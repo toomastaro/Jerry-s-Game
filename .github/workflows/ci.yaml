@@ -1,13 +1,13 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: black
+
 on: [push]
+
 jobs:
-  Explore-GitHub-Actions:
+  black:
     runs-on: ubuntu-latest
     steps:
-    - name: Run black
-      run:
-        black --check .
-    - name: Run flake8
-      run: flake8
-
+      - uses: actions/checkout@v1
+      - name: Black Code Formatter
+        uses: lgeiger/black-action@master
+        with:
+          args: ". --check"
