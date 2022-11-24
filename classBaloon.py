@@ -1,5 +1,7 @@
-import pygame
 from random import choice, randint
+
+import pygame
+
 
 class Baloon(pygame.sprite.Sprite):
     def __init__(self, speed):

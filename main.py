@@ -1,14 +1,13 @@
-import pygame, classGame, classBaloon
+import pygame
 
+import classBaloon
+import classGame
 
 game = classGame.Game()
 
 pygame.time.set_timer(pygame.USEREVENT, 400)
 TIMESPEED = pygame.USEREVENT + 1
 pygame.time.set_timer(TIMESPEED, 7000)
-
-
-
 
 
 while not game.over:

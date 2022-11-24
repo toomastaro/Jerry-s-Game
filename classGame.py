@@ -1,4 +1,7 @@
-import pygame, classBaloon
+import pygame
+
+import classBaloon
+
 pygame.init()
 
 
